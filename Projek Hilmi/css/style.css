@@ -1,0 +1,766 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif,Arial;
+    scroll-behavior: smooth;
+}
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url("uii.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container{
+    width: 80%;
+    margin-inline: auto;
+    
+    
+}
+
+.navbar {
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar.scrolling-active {
+    background-color: white;
+    padding: 30px 0;
+    z-index: 1000;
+    color: black;
+    
+  }
+  
+  .navbar .box-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .box-navbar .menu {
+    display: flex;
+    column-gap: 50px;
+  }
+  
+  .navbar .box-navbar .menu li {
+    list-style-type: none;
+  }
+  
+  .navbar .box-navbar .menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .navbar.scrolling-active .box-navbar .menu li a {
+    color: black;
+  }
+  
+  .navbar .box-navbar .menu .active a {
+    background-color: green;
+  }
+  
+  .navbar .box-navbar .menu li a:hover {
+    background-color: green;
+  }
+.logo{
+    display: flex;
+    align-items: center;
+}
+.ui img{
+    width: 30%;
+}
+
+.menu-bar {
+    display: none;
+    font-size: 24px;
+    display: none;
+}
+
+.hero{
+    width: 100%;
+    min-height: 200vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+.hero .box-hero{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    margin-top: -50%;
+    color: white;
+    
+}
+
+.hero .box-hero .box:nth-child(2) img {
+    width: 100%;
+}
+
+
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 990px) {
+    .menu-bar {
+        display: block;
+    }
+
+
+    .navbar .box-navbar .menu {
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        row-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        top: 70px;
+        right: 50%;
+        transform: translateX(50%);
+        -webkit-transform: translateX(50%);
+        -moz-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        -o-transform: translateX(50%);
+        opacity: 0;
+        transition: all .3s;
+        background: linear-gradient((rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)));
+
+    }
+}
+
+.navbar .box-navbar .menu.menu-active{
+    top: 80px;
+    opacity: 1;
+    border-top: 1px solid white;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social a{
+    font-size: 27px;
+    margin: 0.5rem;
+}
+.social a .bx{
+    padding: 5px;
+    color: white;
+    background: black;
+    border-radius: 50%;
+}
+.social a .bx:hover {
+    background: green ;
+}
+.links{
+    margin: 1rem 0 1rem
+}
+.links a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: green;
+    padding: 1rem;
+}
+.links a:hover{
+    color: green;
+}
+.contact p {
+    text-align: center;
+}
+
+
+
+
+
+
+
+/*carousel*/
+
+
+/*carousel
+body {
+    font-family: Arial, sans-serif;
+}
+
+.carousel {
+    position: relative;
+    width: 70%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border:   ((rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)));
+    border-radius: 10px;
+    margin-right: 0%;
+    margin-top: -20%;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+*/
+
+
+
+
+
+
+
+/* Fasilitas Pelayanan 
+.fasilitas {
+    position: absolute;
+    padding: 60px 20px;
+    background: linear-gradient((rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)));
+    text-align: center;
+    margin-bottom: -200%;
+    
+    
+}
+
+.fasilitas h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color:white;
+    font-weight: 700;
+}
+
+.fasilitas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.fasilitas-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.fasilitas-item:hover {
+    transform: translateY(-10px);
+}
+
+.fasilitas-item i {
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.fasilitas-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.fasilitas-item p {
+    color: #666;
+}
+
+*/
+
+
+/* pg 3*/
+
+/*
+.admisi-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.admisi {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.admisi .text {
+    flex: 1;
+}
+
+.admisi .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admisi .image img {
+    max-width: 76%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.admisi h1 {
+    color: white;
+}
+
+.admisi p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: white;
+}
+
+.btn {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background-color: #003f7f;
+}
+*/
+
+/*list Layanan*/
+
+.sidebarr {
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.sidebarrr {
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.sidebarrr ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebarrr ul li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.sidebarrr ul li.active, .sidebar ul li:hover {
+    background-color: #f0f0f0;
+}
+
+.contentt {
+    flex: 1;
+    padding: 20px;
+}
+
+.headerr {
+    margin-bottom: 20px;
+    
+}
+
+.headerr h1 {
+    margin-top: 0;
+}
+
+.headerr p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.tombol {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contentt-section {
+    display: none;
+}
+
+.contentt-section.active {
+    display: block;
+}
+
+
+/* login */
+
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/*cerita bersama kami p2*/
+
+
+
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+    padding: 0 50px;
+    background-image:url("rssss.png");
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;  
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.content {
+    max-width: 50%;
+}
+
+.content h2 {
+    color: #888;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.author-info h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.author-info p {
+    margin: 0;
+    color: #555;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 10px 20px;
+
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #0056b3;
+}
+
+.image-container {
+    max-width: 50%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    
+}
+
+
+/*Buat Pesanan  p3*/
+
+
+
+.pemesanan {
+    display: flex;
+    width: 50%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    
+}
+
+.left {
+    padding: 40px;
+    flex: 1;
+}
+
+.left h2 {
+    color: #aaa;
+    margin: 0;
+}
+
+.left h1 {
+    color: #333;
+    margin: 10px 0;
+}
+
+.left p {
+    color: #666;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.card-content {
+    color: #fff;
+    text-align: center;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.card-content p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    font: arial;
+}
+.pemesanann{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.pemesanann:hover {
+    background-color: #0056b3;
+}
+
+
+/*about p4*/
+
+.sejarah {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Membagi layout menjadi dua kolom */
+    width: 50%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    justify-items: end; /* Memindahkan semua elemen ke kanan */
+    align-items: start; /* Mengatur elemen ke bagian atas */
+}
+
+.sejarah .kiri {
+    grid-column: 1; /* Menempatkan div .kiri di kolom pertama */
+    margin-right: auto; /* Memastikan div .kiri tetap di kiri */
+    text-align: right; /* Mengubah teks menjadi rata kanan */
+}
+
+.sejarah .kanan {
+    grid-column: 2; /* Menempatkan div .kanan di kolom kedua */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Memindahkan elemen ke kanan */
+}
+
+.sejarah .kartu {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Mengubah posisi elemen ke kanan */
+}
+
+.sejarah .kartu img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sejarah .belebih {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Mengubah posisi elemen ke kanan */
+}
+
+.sejarah .kartu-content {
+    text-align: right; /* Mengubah teks menjadi rata kanan */
+}
+
+.belija {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: right; /* Mengubah teks menjadi rata kanan */
+    margin-top: 10px;
+}
+

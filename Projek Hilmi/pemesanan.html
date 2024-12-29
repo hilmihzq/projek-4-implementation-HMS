@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Layanan di Klinik</title>
+    <link rel="stylesheet" href="css/coba.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="logo-trans.png" alt="RSUI" class="logo">
+            <a href="#" class="help-link">Butuh bantuan? <span>Hubungi Kami</span></a>
+        </div>
+    </header>
+    <main>
+        <div class="form-container">
+            <h1>Formulir Layanan di RSUI</h1>
+            <h2>RUMAH SAKIT UNIVERSITAS INDONESIA</h2> <br>
+            <hr>
+
+            <form id="clinicForm">
+                <section>
+                    <h3>Layanan Dipilih</h3>
+                    <br>
+                    <label for="layanan">Layanan</label>
+                    <select id="layanan" name="layanan">
+                        <option value="Dokter Spesialis Mata: DR.Syafrudin Ismail">Dokter Spesialis Mata: DR.Syafrudin Ismail</option>
+                        <option value="Dokter Spesialis Mata: DR. Amanda Tan">Dokter Spesialis Mata: DR. Amanda Tan</option>
+                        <option value="Dokter Spesialis Jantung: DR. Budi Prasetyo">Dokter Spesialis Jantung: DR. Budi Prasetyo</option>
+                        <option value="Dokter Pskiater">Dokter Pskiater : DR.Hilmi Haziq/option>
+                        <option value="Dokter Spesialis Bedah Umum: DR. Candra Wijaya">Dokter Spesialis Bedah Umum: DR. Candra Wijaya</option>
+                        <option value="Dokter Spesialis Anak: DR. Dewi Kartika">Dokter Spesialis Anak: DR. Dewi Kartika</option>
+                        <option value="Dokter Spesialis Neurologi: DR. Eko Susanto">Dokter Spesialis Neurologi: DR. Eko Susanto</option>
+                        <option value="Dokter Spesialis Gigi dan Mulut: DR. Farah Putri">Dokter Spesialis Gigi dan Mulut: DR. Farah Putri</option>
+                        <option value="Dokter Spesialis Kulit dan Kelamin: DR. Gita Pratiwi">Dokter Spesialis Kulit dan Kelamin: DR. Gita Pratiwi</option>
+                        <option value="Dokter Spesialis Orthopedi: DR. Hadi Santoso">Dokter Spesialis Orthopedi: DR. Hadi Santoso</option>
+                        <option value="Dokter Spesialis THT (Telinga Hidung Tenggorokan): DR. Indra Wijaya">Dokter Spesialis THT (Telinga Hidung Tenggorokan): DR. Indra Wijaya</option>
+                        <option value="Dokter Spesialis Kandungan: DR. Jelita Sari">Dokter Spesialis Kandungan: DR. Jelita Sari</option>
+                        <option value="Dokter Spesialis Psikiatri: DR. Kusuma Wardhani">Dokter Spesialis Psikiatri: DR. Kusuma Wardhani</option>
+                        <option value="Dokter Spesialis Saraf: DR. Lani Rahayu">Dokter Spesialis Saraf: DR. Lani Rahayu</option>
+                        <option value="Dokter Spesialis Rehabilitasi Medik: DR. Mawar Indah">Dokter Spesialis Rehabilitasi Medik: DR. Mawar Indah</option>
+                        <option value="Poli Kesehatan Tata Surya Dunia: DR.ST.MT.Raka Rahardika">Poli Kesehatan Tata Surya Dunia : DR.ST.MT.Raka Rahardika</option>
+                        <option value="Dokter Spesialis Patologi Klinik: DR. Nanda Prabowo">Dokter Spesialis Patologi Klinik: DR. Nanda Prabowo</option>
+                        <option value="Dokter Spesialis Urologi: DR. Oscar Wibowo">Dokter Spesialis Urologi: DR. Oscar Wibowo</option>
+                    </select>
+                </section>
+
+                <section>
+                    <h3>Data Diri</h3>
+                    <label for="nama">Nama lengkap</label>
+                    <input type="text" id="nama" name="nama" required>
+
+                    <label for="tanggal-lahir">Tanggal lahir</label>
+                    <input type="date" id="tanggal-lahir" name="tanggal-lahir" required>
+
+                    <label for="telepon">Nomor Telepon</label>
+                    <div class="phone-input">
+                        <select id="kode-negara" name="kode-negara">
+                            <option value="+62">+62</option>
+                        </select>
+                        <input type="tel" id="telepon" name="telepon" required>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Kode Voucher</h3>
+                    <label for="voucher">Kode Voucher</label>
+                    <input type="text" id="voucher" name="voucher">
+                    <a href="#" class="paste-code" id="pasteCode">Tempel Kode</a>
+                </section>
+
+                <section>
+                    <h3>Jadwal Kunjungan</h3>
+                    <label for="tanggal-kunjungan">Tanggal</label>
+                    <input type="date" id="tanggal-kunjungan" name="tanggal-kunjungan" required>
+
+                    <p class="info-text">Pastikan kunjungan ke RSUI tidak melebihi 1×24 jam dari jadwal kedatangan yang telah dipilih.</p>
+
+                    <label for="jam-kunjungan">Jam</label>
+                    <input type="time" id="jam-kunjungan" name="jam-kunjungan" required>
+                </section>
+
+                <p class="agreement">Dengan mendaftar dan klik Lanjut, Anda menyetujui <a href="#">syarat dan ketentuan</a> dan <a href="#">kebijakan privasi</a> Rumah Sakit Universitas Indonesia.</p>
+
+                <button type="submit" class="submit-btn">Lanjut</button>
+            </form>
+        </div>
+    </main>
+
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Terimakasih sudah membuat pesanan di rumah sakit Universitas Indonesia</h2>
+            <p id="confirmName"></p>
+            <p id="confirmService"></p>
+            <p id="confirmDate"></p>
+            <p id="confirmTime"></p>
+            <button id="confirmBtn" class="submit-btn">Konfirmasi</button>
+        </div>
+    </div>
+
+    <!-- Modal for Unavailability -->
+    <div id="unavailableModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p>This doctor is not available at the selected time.</p>
+        </div>
+    </div>
+
+    <script src="coba.js"></script>
+</body>
+</html>
+

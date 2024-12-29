@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar - RSUI</title>
+    <link rel="stylesheet" href="css/daftar.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="container">
+                <div class="box-navbar">
+                    <div class="logo">
+                        <a href="#" class="ui"><img src="logo-trans.png" alt=""></a>
+                    </div>
+                    
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Service</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="doctor.html">Doctor</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                        
+                    </ul>
+                    <i class="fa-solid fa-bars menu-bar"></i>
+                </div>
+            </div>  
+        </div> 
+    </header>
+    <br><br><br><br>
+
+    <main>
+        <div class="daftar">
+            <form id="registrationForm">
+                <h2>Daftar</h2>
+                <label for="fullName">Nama Lengkap:</label>
+                <input type="text" id="fullName" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+    
+                <label for="phone">Nomor Telepon:</label>
+                <input type="text" id="phone" required>
+    
+                <label for="address">Alamat:</label>
+                <input type="text" id="address" required>
+    
+                <label for="dob">Tanggal Lahir:</label>
+                <input type="date" id="dob" required>
+    
+                <label for="gender">Jenis Kelamin:</label>
+                <select id="gender" required>
+                    <option value="">Pilih...</option>
+                    <option value="male">Pria</option>
+                    <option value="female">Wanita</option>
+                </select>
+    
+                <label for="university">Apakah Anda dari Universitas Indonesia?</label>
+                <select id="university" required>
+                    <option value="">Pilih...</option>
+                    <option value="yes">Ya</option>
+                    <option value="no">Tidak</option>
+                </select>
+    
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+    
+                <label for="confirmPassword">Konfirmasi Password:</label>
+                <input type="password" id="confirmPassword" required>
+    
+                <button type="submit">Daftar</button>
+            </form>
+        </div>
+    
+        <div id="modal" class="mod">
+            <div class="mod-content">
+                <span class="close">&times;</span>
+                <p>Anda telah berhasil signup!</p>
+                <button id="okBtn">OK</button>
+            </div>
+        </div>
+
+    <footer>
+        <p>&copy; 2023 Rumah Sakit Universitas Indonesia. All rights reserved.</p>
+    </footer>
+
+    <script src="daftar.js"></script>
+</body>
+</html>
+

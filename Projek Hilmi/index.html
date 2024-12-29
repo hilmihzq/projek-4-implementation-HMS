@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link cdjn style font gugel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>RSUI</title>
+     <!-- box icon-->
+     <link rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+     <!--font.gugel poppins-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+     <!-- mengarah Ke Style CSS -->
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+    <div class="navbar">
+        <div class="container">
+            <div class="box-navbar">
+                <div class="logo">
+                    <a href="#" class="ui"><img src="logo-trans.png"alt=""></a>
+                </div>
+                
+                    <ul class="menu">
+                        <li><a href="#">Utama</a></li>
+                        <li><a href="#ss">Layanan</a></li>
+                        <li><a href="#pp">Tentang</a></li>
+                        <li><a href="doctor.html">Doktor</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                        <li class="active"><a href="#" id="loginBtn">masuk</a></li>
+                    </ul>
+                <i class="fa-solid fa-bars menu-bar"></i>
+            </div>
+        </div>  
+    </div>    
+    <br><br>
+    <br><br>   
+    <br><br>
+    <br><br>
+    <br><br>   
+    <br><br><br><br>
+    <br><br>   
+    <br><br><br><br>
+    <br><br>   
+    <br><br><br><br>
+    <br><br>   
+    <br><br><br><br>
+    <br><br>   
+    <br><br>
+
+
+
+
+
+    <div class="hero">
+        <div class="container">
+            <div class="box-hero">
+                <div class="box">
+                    <span>Welcome to</span>
+                    <h1> RUMAH SAKIT <br>UNIVERSITAS INDONESIA</h1> <br>
+                    <a href="pemesanan.html" class="btn" >Selengkapnya <b>↩</b></a>
+                    
+                </div>
+                
+            </div>
+
+            <div>
+                
+                <br>
+                <br>    <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+        
+<hr>
+<br>
+<div class="about">
+    <div class="content">
+        <h2>Cerita #BersamaSiloam</h2>
+        <h1>Perjuangan Hendra Melawan Penyakit Ginjal Turunan.</h1>
+        <div class="author">
+            <img src="uic.jpg" alt="Prof. Dr. dr. Endang Susalit">
+            <div class="author-info">
+                <h3>Prof. Dr. dr. Endang Susalit, SpPD-KGH</h3>
+                <p>Spesialis Penyakit Dalam - Konsultan Ginjal dan Hipertensi</p>
+            </div>
+        </div>
+        <p class="description">
+            Penyakit ini pernah dialami oleh Hendra Johari (45). Setelah mengalami penurunan fungsi ginjal akibat ginjal polikistik, ia memutuskan untuk menjalani transplantasi ginjal di Siloam Hospitals Asri.
+        </p>
+        <a href="#" class="read-more">Lihat Selengkapnya <b>↩</b></a>
+    </div>
+    <div class="image-container">
+        
+    </div>
+</div>
+<br>
+<br>
+
+<div class="pemesanan" id="pp">
+    <div class="left">
+        <h2>Buat Janji Temu</h2>
+        <h1>Sudah buat janji temu?</h1>
+        <p>Hal yang bisa Anda lakukan agar kunjungan jadi lebih mudah.</p>
+    </div>
+    <div class="right">
+        <div class="card" onclick="manageAppointment()">
+            <img src="canss.png" alt="Kelola Janji Temu">
+            <div class="overlay">
+                <div class="card-content">
+                    <h3>Kelola Janji Temu</h3>
+                    <a href="pemesanan.html" class="pemesanann"> >>Kelola Pemesanan</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<br>
+<!--
+<div  class="sejarah" >
+    <div class="kiri">
+        <h2>Buat Janji Temu</h2>
+        <h1>Sudah buat janji temu?</h1>
+        <p>Hal yang bisa Anda lakukan agar kunjungan jadi lebih mudah.</p>
+    </div>
+    <div class="kanan">
+        <div class="kartu" onclick="manageAppointment()">
+            <img src="canss.png" alt="liat sejarah">
+            <div class="belebih">
+                <div class="kartu-content">
+                    <h3>Kelola Janji Temu</h3>
+                    <a href="pemesanan.html" class="belija">Kelola Pemesanan</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+--> 
+
+
+
+<!--Fasilitas Pelayanan-->
+
+<!--
+            <section class="fasilitas" id="fasilitas">
+                <div class="container">
+                    <h2>Fasilitas Pelayanan</h2>
+                    <div class="fasilitas-grid">
+                        <div class="fasilitas-item">
+                            <i class="fa-solid fa-hospital"></i>
+                            <h3>Rawat Inap</h3>
+                            <p>Fasilitas rawat inap dengan kamar yang nyaman dan layanan terbaik.</p>
+                        </div>
+                        <div class="fasilitas-item">
+                            <i class="fa-solid fa-stethoscope"></i>
+                            <h3>Poliklinik</h3>
+                            <p>Berbagai poliklinik dengan dokter spesialis yang berpengalaman.</p>
+                        </div>
+                        <div class="fasilitas-item">
+                            <i class="fa-solid fa-ambulance"></i>
+                            <h3>IGD</h3>
+                            <p>Layanan gawat darurat 24 jam dengan tenaga medis yang sigap.</p>
+                        </div>
+                        <div class="fasilitas-item">
+                            <i class="fa-solid fa-flask"></i>
+                            <h3>Laboratorium</h3>
+                            <p>Laboratorium lengkap untuk berbagai jenis pemeriksaan kesehatan.</p>
+                        </div>
+                        <div class="fasilitas-item">
+                            <i class="fa-solid fa-x-ray"></i>
+                            <h3>Radiologi</h3>
+                            <p>Fasilitas radiologi dengan peralatan canggih dan modern.</p>
+                        </div>
+                        <div class="fasilitas-item">
+                            <i class="fa-solid fa-heartbeat"></i>
+                            <h3>Rehabilitasi</h3>
+                            <p>Program rehabilitasi medis yang komprehensif dan terpadu.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </div> 
+    </div> 
+-->
+
+
+
+    <!--list Layanan
+
+    <div class="fasility">
+        <div class="fasil">
+            <ul>
+                <li><a href="#">Admisi</a></li>
+                <li class="active"><a href="#">Hemodialisis</a></li>
+                <li><a href="#">Intensive Care (ICU, PICU, NICU)</a></li>
+                <li><a href="#">Medical Check Up</a></li>
+                <li><a href="#">Laboratorium</a></li>
+                <li><a href="#">Farmasi</a></li>
+                <li><a href="#">Radiologi</a></li>
+            </ul>
+        </div>
+        <div class="filfa">
+            <h1>FASILITAS & LAYANAN</h1>
+            <div class="underline"></div>
+            <div class="service">
+                <h2>Hemodialisis</h2>
+                <p>
+                    Hemodialisis/ Cuci Darah merupakan tindakan medis sebagai terapi pengganti fungsi ginjal yang tidak dapat bekerja dengan normal dengan menggunakan mesin cuci darah. Layanan hemodialisis RS Universitas Indonesia memberikan pelayanan hemodialisis ba...
+                </p>
+                <button onclick="learnMore()">SELENGKAPNYA &rarr;</button>
+            </div>
+            <div class="images">
+                <img src="image1.png" alt="Ruang Hemodialisis">
+                <img src="image2.png" alt="Hemodialisis Room">
+            </div>
+        </div>
+    </div>
+    -->
+
+    <!--list fas2
+
+    <div class="fasilko">
+        <div class="pacil">
+            <ul>
+                <li><a href="#" onclick="showSection('admisi')">Admisi</a></li>
+                <li><a href="#" onclick="showSection('hemodialisis')" class="active">Hemodialisis</a></li>
+                <li><a href="#" onclick="showSection('intensive-care')">Intensive Care (ICU, PICU, NICU)</a></li>
+                <li><a href="#" onclick="showSection('medical-checkup')">Medical Check Up</a></li>
+                <li><a href="#" onclick="showSection('laboratorium')">Laboratorium</a></li>
+                <li><a href="#" onclick="showSection('farmasi')">Farmasi</a></li>
+                <li><a href="#" onclick="showSection('radiologi')">Radiologi</a></li>
+            </ul>
+        </div>
+        <div class="cila">
+            <h1>FASILITAS & LAYANAN</h1>
+            <div class="acila"></div>
+
+            <div id="admisi" class="section" style="display:none;">
+                <h2>Admisi</h2>
+                <p>Informasi tentang Admisi...</p>
+            </div>
+
+            <div id="hemodialisis" class="section">
+                <h2>Hemodialisis</h2>
+                <p>Hemodialisis/ Cuci Darah merupakan tindakan medis sebagai terapi pengganti fungsi ginjal yang tidak dapat bekerja dengan normal dengan menggunakan mesin cuci darah. Layanan hemodialisis RS Universitas Indonesia memberikan pelayanan hemodialisis ba...</p>
+                <button onclick="learnMore()">SELENGKAPNYA &rarr;</button>
+                <div class="images">
+                    <img src="image1.png" alt="Ruang Hemodialisis">
+                    <img src="image2.png" alt="Hemodialisis Room">
+                </div>
+            </div>
+
+            <div id="intensive-care" class="section" style="display:none;">
+                <h2>Intensive Care (ICU, PICU, NICU)</h2>
+                <p>Informasi tentang Intensive Care...</p>
+            </div>
+
+            <div id="medical-checkup" class="section" style="display:none;">
+                <h2>Medical Check Up</h2>
+                <p>Informasi tentang Medical Check Up...</p>
+            </div>
+
+            <div id="laboratorium" class="section" style="display:none;">
+                <h2>Laboratorium</h2>
+                <p>Informasi tentang Laboratorium...</p>
+            </div>
+
+            <div id="farmasi" class="section" style="display:none;">
+                <h2>Farmasi</h2>
+                <p>Informasi tentang Farmasi...</p>
+            </div>
+
+            <div id="radiologi" class="section" style="display:none;">
+                <h2>Radiologi</h2>
+                <p>Informasi tentang Radiologi...</p>
+            </div>
+        </div>
+    </div>
+-->
+<br>
+
+<!--Falitas layanan 3-->
+<div class="sidebarr" id="ss">
+    <div class="sidebarrr">
+        <ul>
+            <li data-section="admisi">Admisi</li>
+            <li data-section="hemodialisis">Hemodialisis</li>
+            <li class="active" data-section="intensive-care">Intensive Care (ICU, PICU, NICU)</li>
+            <li data-section="medical-check-up">Medical Check Up</li>
+            <li data-section="laboratorium">Laboratorium</li>
+            <li data-section="farmasi">Farmasi</li>
+            <li data-section="radiologi">Radiologi</li>
+        </ul>
+    </div>
+    <div class="contentt">
+        <div id="intensive-care" class="contentt-section active">
+            <div class="headerr">
+                <h1>Intensive Care (ICU, PICU, NICU)</h1>
+                <hr>
+                <p>Unit perawatan intensif kami didukung oleh dokter spesialis anestesi konsultan intensive care, juga jajaran tim medis berpengalaman dan bersertifikasi dalam menangani pasien kritikal dan memerlukan perawatan intensif. Selain itu, dilengkapi juga dengan perlengkapan medis mutakhir dan modern. Unit perawatan intensif RS xyz terdiri</p>
+                <button class="tombol">SELENGKAPNYA</button>
+            </div>
+            <div class="gallery">
+                <img src="uic.jpg" alt="ICU">
+                <img src="uic.jpg" alt="ICU">
+                <img src="uic.jpg" alt="ICU">
+                <img src="image4.jpg" alt="ICU">
+                <img src="image5.jpg" alt="ICU">
+                <img src="image6.jpg" alt="ICU">
+            </div>
+        </div>
+        <div id="admisi" class="contentt-section">
+            <h1>Admisi</h1>
+            <hr>
+            <p>Unit rawat inap kami yang dilengkapi berbagai fasilitas untuk meningkatkan kenyamanan Anda selama perawatan di RSUI.</p>
+            <div>
+                <div class="gallery">
+                <img src="uic.jpg" alt="ICU">
+                <img src="uic.jpg" alt="ICU">
+            </div>
+            </div>
+        </div>
+        <div id="hemodialisis" class="contentt-section">
+            <h1>Hemodialisis</h1>
+            <hr>
+            <p>Hemodialisis/ Cuci Darah merupakan tindakan medis sebagai terapi pengganti fungsi ginjal yang tidak dapat bekerja dengan normal dengan menggunakan mesin cuci darah. Layanan hemodialisis RS Universitas Indonesia memberikan pelayanan hemodialisis baik pasien gagal ginjal akut maupun gagal ginjal kronik yang berkualitas, komprehensif, dan memberikan kenyamanan dan keamanan untuk pasien selama menjalani terapi hemodialisis di rumah sakit dengan prinsip “we provide outstanding care”. Layanan hemodialisis RS Universitas Indonesia memiliki sumber daya manusia yang kompeten, berkualitas, dan berpengalaman baik dokter spesialis, dokter, perawat, dan tenaga rumah sakit lainnya. Tim hemodialisis RSUI akan memberikan pelayanan terbaik dengan pendekatan interdisiplin dengan mengutamakan kenyamanan, keselamatan, dan kualitas hidup dari pasien.</p>
+            <div>
+                <div class="gallery">
+                <img src="uic.jpg" alt="ICU">
+                <img src="uic.jpg" alt="ICU">
+            </div>
+            </div>
+        </div>
+        <div id="medical-check-up" class="contentt-section">
+            <h1>Medical Check Up</h1>
+            <hr>
+            <p>Gaya hidup modern dan tingkat stres yang tinggi berdampak terhadap kesehatan. Pemeriksaan kesehatan berkala penting dilakukan demi mencegah terjadinya penyakit degeneratif dan dampaknya yang fatal, menilai faktor risiko terhadap penyakit tertentu, serta untuk memantau perkembangan kesehatan Anda.</p>
+            <div>
+                <div class="gallery">
+                <img src="uic.jpg" alt="ICU">
+                <img src="uic.jpg" alt="ICU">
+            </div>
+            </div>
+        </div>
+        <div id="laboratorium" class="contentt-section">
+            <h1>Laboratorium</h1>
+            <hr>
+            <p>Laboratorium RSUI menerapkan konsep laboratorium terpadu sehingga memiliki laboratorium patologi klinik, patologi anatomi, mikrobiologi, parasitologi, biomolekuler, dan bank darah. Semua unit tersebut berada dalam area bersama yang berdampingan satu sama lain. Dengan konsep laboratorium terpadu, maka diharapkan</p>
+            <div class="gallery">
+                <img src="uic.jpg" alt="ICU">
+                <img src="uic.jpg" alt="ICU">
+        </div>
+        </div>
+        <div id="farmasi" class="contentt-section">
+            <h1>Farmasi</h1>
+            <hr>
+            <p>Unit Farmasi dan CSSD berada di bawah Direktur Pelayanan Medik dan Keperawatan, dan dipimpin oleh seorang Apoteker. Unit Farmasi dan CSSD berperan dalam pengelolaan perbekalan farmasi dan pelayanan farmasi klinik (umum dan spesialis) serta sterilisasi alat.</p>
+            <div class="gallery">
+                <img src="uic.jpg" alt="ICU">
+                <img src="uic.jpg" alt="ICU">
+        </div>
+        </div>
+        <div id="radiologi" class="contentt-section">
+            <h1>Radiologi</h1>
+            <hr>
+            <p>Unit Radiologi RSUI memiliki layanan unggulan dalam bidang neuroradiologi, radiologi abdomen, radiologi muskuloskeletal, serta radiologi intervensional dan kardiovaskular.</p>
+            <div class="gallery">
+                <img src="uic.jpg" alt="ICU">
+                <img src="uic.jpg" alt="ICU">
+        </div>
+    </div>
+</div>
+
+    <!-- Modal -->
+
+ 
+
+
+
+
+    </header> <br>
+
+<!--Contact-->
+    <section class="contact" id="contact">
+        <div class="social">
+            <a href=""><i class='bx bxl-facebook'></i></a>
+            <a href=""><i class='bx bxl-instagram'></i></a>
+            <a href=""><i class='bx bxl-twitter'></i></a>
+            <a href=""><i class='bx bxl-youtube'></i></a>
+            <a href=""><i class='bx bx-buildings' ></i></a>
+        </div>
+        <div class="links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms Of Use</a>
+            <a href="#">Our Company</a>
+        </div>
+        <p>&#169; carpoolVenom All Right Reserved.</p>
+    </section>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" required>
+
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" required>
+
+            <button id="loginSubmit">Login</button>
+            <p>Belum punya akun? <a href="daftar.html">Daftar di sini</a></p>
+        </div>
+
+    </div>
+
+
+
+
+
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
