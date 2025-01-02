@@ -4,6 +4,7 @@ FROM nginx:alpine
 COPY . /usr/share/nginx/html
 
 # Copy file konfigurasi Nginx
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 
 # Expose port 80
